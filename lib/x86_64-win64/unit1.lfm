@@ -1,0 +1,765 @@
+object Form1: TForm1
+  Left = 203
+  Height = 510
+  Top = 130
+  Width = 729
+  Caption = 'Connect4'
+  ClientHeight = 510
+  ClientWidth = 729
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -37
+  Font.Name = 'Arial'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    Left = 170
+    Height = 48
+    Top = 0
+    Width = 261
+    Caption = 'Connect 4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -48
+    Font.Name = 'Lucida Console'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Panel: TPanel
+    Left = 56
+    Height = 420
+    Top = 50
+    Width = 490
+    ClientHeight = 420
+    ClientWidth = 490
+    Color = 12369084
+    ParentColor = False
+    TabOrder = 0
+    object TShape1: TShape
+      Left = 0
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape2: TShape
+      Left = 0
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape3: TShape
+      Left = 0
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape4: TShape
+      Left = 70
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape5: TShape
+      Left = 70
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape6: TShape
+      Left = 70
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape10: TShape
+      Left = 140
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape33: TShape
+      Left = 140
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape12: TShape
+      Left = 140
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape24: TShape
+      Left = 210
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape34: TShape
+      Left = 210
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape14: TShape
+      Left = 210
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape35: TShape
+      Left = 280
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape15: TShape
+      Left = 280
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape25: TShape
+      Left = 280
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape41: TShape
+      Left = 0
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape42: TShape
+      Left = 70
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape43: TShape
+      Left = 140
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape44: TShape
+      Left = 210
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape45: TShape
+      Left = 280
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape51: TShape
+      Left = 0
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape52: TShape
+      Left = 70
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape53: TShape
+      Left = 140
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape54: TShape
+      Left = 210
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape55: TShape
+      Left = 280
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape61: TShape
+      Left = 0
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object TShape62: TShape
+      Left = 70
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object TShape63: TShape
+      Left = 140
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object TShape64: TShape
+      Left = 210
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object TShape65: TShape
+      Left = 280
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object TShape16: TShape
+      Left = 350
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape26: TShape
+      Left = 350
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape36: TShape
+      Left = 350
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape46: TShape
+      Left = 350
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape56: TShape
+      Left = 350
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape66: TShape
+      Left = 350
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object TShape17: TShape
+      Left = 420
+      Height = 70
+      Top = 0
+      Width = 70
+    end
+    object TShape27: TShape
+      Left = 420
+      Height = 70
+      Top = 70
+      Width = 70
+    end
+    object TShape37: TShape
+      Left = 420
+      Height = 70
+      Top = 140
+      Width = 70
+    end
+    object TShape47: TShape
+      Left = 420
+      Height = 70
+      Top = 210
+      Width = 70
+    end
+    object TShape57: TShape
+      Left = 420
+      Height = 70
+      Top = 280
+      Width = 70
+    end
+    object TShape67: TShape
+      Left = 420
+      Height = 70
+      Top = 350
+      Width = 70
+    end
+    object Circle11: TShape
+      Left = 0
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle21: TShape
+      Left = 0
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle12: TShape
+      Left = 70
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle22: TShape
+      Left = 70
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle13: TShape
+      Left = 140
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle23: TShape
+      Left = 140
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle31: TShape
+      Left = 0
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle32: TShape
+      Left = 70
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle33: TShape
+      Left = 140
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle41: TShape
+      Left = 0
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle42: TShape
+      Left = 70
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle43: TShape
+      Left = 140
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle44: TShape
+      Left = 210
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle34: TShape
+      Left = 210
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle24: TShape
+      Left = 210
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle14: TShape
+      Left = 210
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle45: TShape
+      Left = 280
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle35: TShape
+      Left = 280
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle25: TShape
+      Left = 280
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle15: TShape
+      Left = 280
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle51: TShape
+      Left = 0
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle52: TShape
+      Left = 70
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle53: TShape
+      Left = 140
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle54: TShape
+      Left = 210
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle55: TShape
+      Left = 280
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle61: TShape
+      Left = 0
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle62: TShape
+      Left = 70
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle63: TShape
+      Left = 140
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle64: TShape
+      Left = 210
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle65: TShape
+      Left = 280
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle16: TShape
+      Left = 350
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle26: TShape
+      Left = 350
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle36: TShape
+      Left = 350
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle46: TShape
+      Left = 350
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle56: TShape
+      Left = 350
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle66: TShape
+      Left = 350
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle17: TShape
+      Left = 420
+      Height = 70
+      Top = 0
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle27: TShape
+      Left = 420
+      Height = 70
+      Top = 70
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle37: TShape
+      Left = 420
+      Height = 70
+      Top = 140
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle47: TShape
+      Left = 420
+      Height = 70
+      Top = 210
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle57: TShape
+      Left = 420
+      Height = 70
+      Top = 280
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+    object Circle67: TShape
+      Left = 420
+      Height = 70
+      Top = 350
+      Width = 70
+      Brush.Color = clRed
+      Shape = stCircle
+      Visible = False
+    end
+  end
+  object NewGameButton: TButton
+    Left = 598
+    Height = 25
+    Top = 408
+    Width = 83
+    Caption = 'New Game'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = NewGameButtonClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object FirstMoveCheckBox: TCheckBox
+    Left = 566
+    Height = 24
+    Top = 360
+    Width = 109
+    Caption = 'You move first'
+    Checked = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 2
+  end
+  object InvalidMoveLabel: TLabel
+    Left = 568
+    Height = 21
+    Top = 296
+    Width = 89
+    Caption = 'Invalid move'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object GameOverLabel: TLabel
+    Left = 268
+    Height = 21
+    Top = 480
+    Width = 66
+    Alignment = taCenter
+    Caption = 'Your turn'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object LevelSpin: TSpinEdit
+    Left = 678
+    Height = 29
+    Top = 323
+    Width = 42
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 10
+    MinValue = 1
+    OnChange = LevelSpinChange
+    ParentFont = False
+    TabOrder = 3
+    Value = 5
+  end
+  object Label3: TLabel
+    Left = 566
+    Height = 21
+    Top = 328
+    Width = 101
+    Caption = 'Computer level'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end
